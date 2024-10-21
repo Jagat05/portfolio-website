@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jagat Joshi</title>
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="icon" href="img/jagatjoshi.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/jagatjoshi.png" alt="Jagat Joshi" class="logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="dark-mode-toggle" id="toggleDarkMode">🌙</div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <section id="home" class="section home">
+      <div class="background-wave"></div>
+      <!-- Curvy background -->
+      <div class="content">
+        <h1>Hello, I'm <span class="highlight">Jagat Joshi</span></h1>
+        <p>A curious mind who believes learning never stops!</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="profile-pic-container">
+        <img
+          src="img/jagatbgremove1.png"
+          alt="Jagat Joshi's Photo"
+          class="profile-pic"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <!-- Left Side: Profile Picture or Intro Logo -->
+        <div class="about-photo-container">
+          <img
+            src="img/jagatnobg.png"
+            alt="Jagat Joshi's Photo"
+            class="about-profile-pic"
+          />
+        </div>
+        <!-- Right Side: About Me Content -->
+        <div class="about-text-content">
+          <p>
+            Hello! I'm Jagat Joshi, a creative and curious mind currently in my
+            final year of B.Sc. in Computer Science and Information Technology
+            at Kailali Multiple Campus. I have a passion for web development,
+            with expertise in HTML, CSS, PHP for backend, MySQL for database
+            management and CMS Like WordPress. I’m continually honing my skills
+            in JavaScript and its frameworks, striving to create dynamic and
+            engaging web applications.
+          </p>
+          <p>
+            Beyond web development, I have a knack for graphic design, where I
+            create impactful logos, pamphlets, visiting cards and manymore. My
+            programming journey includes proficiency in Core C, C++, Java, PHP,
+            and JavaScript , equipping me with a solid foundation to tackle
+            complex challenges.
+          </p>
+          <p>
+            In my downtime, you’ll find me reading books and novels, exercising,
+            enjoying music and movies, or spending time with my beloved dogs .
+            I'm excited to connect, collaborate, and create meaningful projects
+            that leave a positive impact !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Here's a selection of my work</p>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card" data-category="ecommerce">
+            <div
+              class="project-img"
+              style="background-image: url('img/HamroDokan1.jpeg')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">Hamro Dokan</h3>
+                <p class="project-description">
+                  A Nepali E-Commerce platform for traditional tools,
+                  handicrafts, and market-demand products.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('Hamro Dokan', 'Hamro Dokan is an E-Commerce platform...')"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="project-card" data-category="frontend">
+            <div
+              class="project-img"
+              style="background-image: url('img/AmazonClone.png')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">Amazon Clone</h3>
+                <p class="project-description">
+                  A basic frontend clone of the e-commerce site Amazon.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('Amazon Clone', 'Amazon Clone is a basic frontend clone...')"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="project-card" data-category="wordpress">
+            <div
+              class="project-img"
+              style="background-image: url('img/Learnkmc1.jpg')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">Learn Kmc</h3>
+                <p class="project-description">
+                  A WordPress site that includes study material for different
+                  courses at Kailali Multiple Campus.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('Learn Kmc', 'Learn Kmc is a WordPress site...')"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>

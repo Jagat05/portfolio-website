@@ -1,0 +1,562 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #007bff;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 70px; /* Adjust logo size */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Section Styles */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Home Section Styles */
+/*?-------------------------?*/
+/* Home Section Styles */
+.home {
+  position: relative;
+  color: rgb(0, 0, 0);
+  padding: 100px 20px;
+  overflow: hidden; /* To contain floating elements */
+}
+
+.background-wave {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #95b3f0, #8cb6e0);
+  clip-path: ellipse(70% 60% at 50% 30%); /* Curvy shape */
+  z-index: 1; /* Background layer */
+  animation: wave 9s ease-in-out infinite; /* Animation for floating effect */
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(30px); /* Floating effect */
+  }
+  100% {
+    transform: translateY(0); /* End position */
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Content layer above the background */
+}
+
+.highlight {
+  color: #ffcc00; /* Highlight color for the name */
+}
+
+.content p {
+  margin-bottom: 50px; /* Added space between text and button */
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800; /* Darken button on hover */
+}
+
+/* Profile picture styling */
+.profile-pic-container {
+  position: relative;
+  z-index: 2; /* Image layer above the background */
+}
+
+.profile-pic {
+  /* width: 200px; 
+  height: 200px; */
+  width: 32vw; 
+  /* height: 100%; */
+  object-fit: cover;
+  /* border-radius: 50%;  */
+  /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); */
+  position: absolute; /* Position it accordingly */
+  right: 60px; /* Adjust position as needed */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+
+
+/* About Section Styles */
+.about-section {
+  background-color: #007bff;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* max-width: 1200px; */
+  max-width: 98%; 
+  margin: 0 auto;
+}
+.about-section h2{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/* Flexbox container for About section */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 40px; /* Space between image and content */
+}
+
+/* Left side: Photo or logo */
+.about-photo-container {
+  flex: 1; /* Take up 1/3 of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile picture with wavy shadow animation */
+.about-profile-pic {
+  width: 350px; /* Adjust size of your photo/logo */
+  height: 350px;
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover;
+  background-color: #f5ff86;
+  animation: wavy-shadow 3s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Keyframes for wavy shadow animation */
+@keyframes wavy-shadow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 162, 255, 0.2), 0 0 40px rgba(0, 0, 0, 0.4);
+  }
+  25% {
+    box-shadow: 0 0 30px rgba(28, 244, 255, 0.2), 0 0 50px rgba(255, 218, 71, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 60px rgba(255, 204, 0, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 30px rgba(93, 231, 255, 0.2), 0 0 50px rgba(193, 174, 100, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(150, 213, 242, 0.2), 0 0 40px rgba(255, 204, 0, 0.4);
+  }
+}
+
+/* Right side: About content */
+.about-text-content {
+  flex: 2; /* Take up 2/3 of the container */
+}
+
+/* .about h2 {
+  font-size: 60px;
+  margin-bottom: 25px;
+  color: #fff;
+} */
+
+
+.about-text-content p {
+  font-size: 15spx;
+  margin-top: 15px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo-container {
+    margin-bottom: 20px;
+  }
+
+  .about-profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .about-text-content p {
+    margin-top: 5px;
+  
+  }
+}
+/*!_____________________________!*/
+/* *Project Section */
+/* Basic Styling */
+.projects-section {
+  padding: 80px 0;
+  background-color: #fffefc;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 12px 25px;
+  margin: 0 10px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ff6363;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 99, 99, 0.3);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #ff6363;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(255, 99, 99, 0.6);
+}
+
+/* Projects Grid Layout */
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(255, 99, 99, 0.6);
+}
+
+/* Project Image */
+.project-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
+
+/* Hover Overlay Effect */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+/* Overlay Content */
+.project-title {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.project-description {
+  color: #ddd;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  background-color: #ff6363;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(255, 99, 99, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 99, 99, 0.8);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  text-align: left;
+}
+
+.modal-content {
+  position: relative;
+  padding: 20px;
+  color: #fff;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+  color: #ff6363;
+}
+
+#modalTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#modalDescription {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* Contact Section Styles */
+.contact {
+  background-color: #fff;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .home {
+      padding: 60px 20px;
+  }
+  .profile-pic {
+    width: 40vw; 
+    right: -10px;  
+  
+  }
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+/* .dark-mode .navbar {
+  background-color: #222;
+} */
+
+.dark-mode .nav-links a {
+  color: #ffcc00;
+}
+
+.dark-mode .btn {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.dark-mode .btn:hover {
+  background-color: #e6b800;
+}
+
+.dark-mode .section {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .project-card {
+  background-color: #555;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+  background-color: #666;
+  color: #f5f5f5;
+}
+
+.dark-mode form button {
+  background-color: #007bff;
+}
+
+.dark-mode form button:hover {
+  background-color: #0056b3;
+}
