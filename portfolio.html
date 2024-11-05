@@ -24,7 +24,22 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="dark-mode-toggle" id="toggleDarkMode">🌙</div>
+
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
 
     <!-- Home Section -->
 
@@ -38,7 +53,7 @@
       </div>
       <div class="profile-pic-container">
         <img
-          src="img/jagatbgremove1.png"
+          src="img/file...png"
           alt="Jagat Joshi's Photo"
           class="profile-pic"
         />
@@ -178,14 +193,24 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
       <h2>Contact Me</h2>
-      <form action="#" method="POST">
+      <form action="https://formspree.io/f/xkgnrwwd" method="POST">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
-
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <span>© <span id="year"></span> JagatJoshi. All rights reserved.</span>
+        <a href="#top" class="scroll-to-top">
+          <span>&#x2191;</span>
+          <!-- Up arrow character -->
+        </a>
+      </div>
+    </footer>
+    <!-- &#x2191; for arrow -->
     <script src="js/portfolio.js"></script>
   </body>
 </html>

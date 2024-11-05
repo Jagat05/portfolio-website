@@ -9,6 +9,17 @@ toggleDarkMode.addEventListener('click', () => {
     toggleDarkMode.textContent = '🌙'; // Change back to moon icon
   }
 });
+
+//JavaScript for Toggling Menu 
+function toggleMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenu.classList.toggle('show');
+}
+
+function closeMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenu.classList.remove('show');
+}
 // for prohect secion
 // Filtering Projects by Category
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -52,3 +63,17 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+// for Smooth Scroll to Top
+
+  document.querySelector('.scroll-to-top').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+// Set the current year in the footer
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
