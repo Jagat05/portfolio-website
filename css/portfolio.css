@@ -695,3 +695,6 @@ footer {
 .dark-mode form button:hover {
   background-color: #0056b3;
 }
+.darkmode footer {
+  background-color: #333232;
+}
