@@ -643,7 +643,7 @@ footer {
  
 }
 
-.dark-mode .navbar {
+.dark-mode .navbar{
   background-color: #333232;
   /* background-color: #2d2d30 */
 }
@@ -695,6 +695,10 @@ footer {
 .dark-mode form button:hover {
   background-color: #0056b3;
 }
-.darkmode footer {
+.dark-mode footer {
   background-color: #333232;
+  /* background-color: #2d2d30 */
+}
+.dark-mode .scroll-to-top{
+  background-color: #252424;
 }
