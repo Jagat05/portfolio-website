@@ -257,19 +257,19 @@ a {
 /* Keyframes for wavy shadow animation */
 @keyframes wavy-shadow {
   0% {
-    box-shadow: 0 0 20px rgba(0, 162, 255, 0.2), 0 0 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 162, 255, 0.2), 0 0 40px rgba(255, 238, 0, 0.4);
   }
   25% {
-    box-shadow: 0 0 30px rgba(28, 244, 255, 0.2), 0 0 50px rgba(255, 186, 57, 0.4);
+    box-shadow: 0 0 30px rgba(215, 215, 112, 0.2), 0 0 50px rgba(203, 191, 22, 0.4);
   }
   50% {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 60px rgba(255, 162, 0, 0.5);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 60px rgba(255, 242, 53, 0.4);
   }
   75% {
-    box-shadow: 0 0 30px rgba(93, 231, 255, 0.2), 0 0 50px rgba(233, 172, 49, 0.4);
+    box-shadow: 0 0 30px rgba(93, 231, 255, 0.2), 0 0 50px rgba(187, 181, 88, 0.4);
   }
   100% {
-    box-shadow: 0 0 20px rgba(150, 213, 242, 0.2), 0 0 40px rgba(235, 140, 24, 0.4);
+    box-shadow: 0 0 20px rgba(150, 213, 242, 0.2), 0 0 40px rgba(182, 176, 103, 0.4);
   }
 }
 
@@ -672,7 +672,12 @@ footer {
   background-color: #333232;
   color: #fff;
 }
-
+.dark-mode .about-profile-pic{
+  background-color: #666;;
+}
+/* .dark-mode .projects-section {
+  background-color: #9f9d9d;
+} */
 .dark-mode .project-card {
   background-color: #555;
 }
