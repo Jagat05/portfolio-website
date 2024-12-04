@@ -199,7 +199,7 @@ a {
   /* width: 200px; 
   */
   /* height: 430px; */
-  width: 35vw; 
+  width: 25vw; 
   /* height: 100%; */
   object-fit: cover;
   /* border-radius: 50%;  */
@@ -563,7 +563,7 @@ form button:hover {
       padding: 60px 20px;
   }
   .profile-pic {
-    width: 50vw; 
+    width: 40vw; 
     right: -80px;  
   
   }
@@ -574,8 +574,8 @@ form button:hover {
 }
 @media (max-width: 540px) {
   .profile-pic {
-    width: 60vw; 
-    right: -80px;  
+    width: 50vw; 
+    right: -60px;  
   
   }
 }
