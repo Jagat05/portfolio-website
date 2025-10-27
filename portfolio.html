@@ -24,8 +24,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="dark-mode-toggle" id="toggleDarkMode">🌙</div>
-
-      <!-- Hamburger Menu Icon -->
       <div class="hamburger" onclick="toggleMenu()">
         <div></div>
         <div></div>
@@ -42,21 +40,14 @@
     </div>
 
     <!-- Home Section -->
-
     <section id="home" class="section home">
       <div class="background-wave"></div>
-      <!-- Curvy background -->
       <div class="content">
         <h1>Hello, I'm <span class="highlight">Jagat Joshi</span></h1>
         <p>A curious mind who believes learning never stops!</p>
         <a href="#projects" class="btn">View My Work</a>
       </div>
       <div class="profile-pic-container">
-        <!-- <img
-          src="img/portfoliophpto.png"
-          alt="Jagat Joshi's Photo"
-          class="profile-pic"
-        /> -->
         <img
           src="img/portfoliophoto1.png"
           alt="Jagat Joshi's Photo"
@@ -69,7 +60,6 @@
     <section id="about" class="section about-section">
       <h2>About Me</h2>
       <div class="about-container">
-        <!-- Left Side: Profile Picture or Intro Logo -->
         <div class="about-photo-container">
           <img
             src="img/jagatnobg.png"
@@ -77,33 +67,32 @@
             class="about-profile-pic"
           />
         </div>
-        <!-- Right Side: About Me Content -->
         <div class="about-text-content">
           <p>
-            Hello! I'm Jagat Joshi, a creative and curious mind currently in my
-            final year of B.Sc. in Computer Science and Information Technology
-            at Kailali Multiple Campus. I have a passion for web development,
-            with experience in
+            Hello! I'm <strong>Jagat Joshi </strong>, a creative and curious
+            mind Completed my undergraduate (B.Sc. in Computer Science and
+            Information Technology) at Kailali Multiple Campus. I have a passion
+            for web development, with experience in
             <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>, building
             responsive and dynamic web applications and
-            <strong>CMS Like WordPress</strong>. Additionally, I am expanding
-            understanding of the <strong>MERN stack </strong>(MongoDB,
+            <strong>CMS like WordPress</strong>. Additionally, I am expanding
+            understanding of the <strong>MERN stack</strong> (MongoDB,
             Express.js, React, and Node.js) and I am actively expanding my
             knowledge to become a full-stack developer.
           </p>
           <p>
-            Beyond web development, I have a knack for graphic design, where I
-            create impactful logos, pamphlets, visiting cards and manymore. My
-            programming journey includes proficiency in Core C, C++, Java, PHP,
-            and JavaScript , equipping me with a solid foundation to tackle
-            complex challenges.
+            Beyond web development, I am intrested in <strong>Teaching</strong>
+            and I have a knack for graphic design, where I create impactful
+            logos, pamphlets, and visiting cards. My programming journey
+            includes proficiency in Core C, C++, Java, PHP, and JavaScript,
+            equipping me with a solid foundation to tackle complex challenges.
           </p>
           <p>
             In my downtime, you’ll find me reading
-            <strong>books and novels </strong>
-            , exercising, enjoying music and movies, or spending time with my
-            beloved dogs . I’m always eager to learn, grow, and explore new
-            technologies. Let’s connect and build something amazing !🚀
+            <strong>books and novels</strong>, exercising, enjoying music and
+            movies, or spending time with my beloved dogs. I’m always eager to
+            learn, grow, and explore new technologies. Let’s connect and build
+            something amazing! 🚀
           </p>
         </div>
       </div>
@@ -118,13 +107,79 @@
         <!-- Filter Buttons -->
         <div class="filter-buttons">
           <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mern">MERN</button>
           <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
           <button class="filter-btn" data-filter="frontend">Frontend</button>
           <button class="filter-btn" data-filter="wordpress">WordPress</button>
         </div>
 
         <div class="projects-grid">
-          <!-- Project Card 1 -->
+          <!-- Project Cards -->
+          <div class="project-card" data-category="mern">
+            <div
+              class="project-img"
+              style="background-image: url('img/todo.png')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">AI Powered ToDo</h3>
+                <p class="project-description">
+                  AI-integrated productivity app for managing tasks smartly.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('AI Powered ToDo', 'AI Powered ToDo is a MERN-based productivity app that uses AI to organize daily tasks.', 'https://github.com/Jagat05/todo_aipowered-simple')"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mern">
+            <div
+              class="project-img"
+              style="background-image: url('img/Sambad.png')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">Sambad - Organization Chat App</h3>
+                <p class="project-description">
+                  A secure real-time chat app for organizations.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('Sambad - Organization Chat App', 'Sambad is a real-time MERN chat app with organization features, secure login, and Socket.io.', 'https://github.com/Jagat05/Sambad')"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="mern">
+            <div
+              class="project-img"
+              style="background-image: url('img/ShikshyaNet.png')"
+            >
+              <div class="hover-overlay">
+                <h3 class="project-title">
+                  ShikshyaNet - Institute Management System
+                </h3>
+                <p class="project-description">
+                  A full-stack app to manage students, teachers, and courses.
+                </p>
+                <a
+                  href="#"
+                  class="project-link"
+                  onclick="openModal('ShikshyaNet - Institute Management System', 'ShikshyaNet is a MERN-based institute management platform with JWT auth and Cloudinary integration.', 'https://github.com/Jagat05/ShikshyaNet')"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="project-card" data-category="ecommerce">
             <div
               class="project-img"
@@ -133,19 +188,19 @@
               <div class="hover-overlay">
                 <h3 class="project-title">Hamro Dokan</h3>
                 <p class="project-description">
-                  A Nepali E-Commerce platform for traditional tools,
-                  handicrafts, and market-demand products.
+                  Nepali E-Commerce platform for local products.
                 </p>
                 <a
                   href="#"
                   class="project-link"
-                  onclick="openModal('Hamro Dokan', 'Hamro Dokan is an E-Commerce platform...')"
-                  >View Details</a
+                  onclick="openModal('Hamro Dokan', 'Hamro Dokan supports local Nepali sellers by selling traditional goods online.', 'https://github.com/Jagat05/HamroDokan')"
                 >
+                  View Details
+                </a>
               </div>
             </div>
           </div>
-          <!-- Project Card 2 -->
+
           <div class="project-card" data-category="frontend">
             <div
               class="project-img"
@@ -154,35 +209,36 @@
               <div class="hover-overlay">
                 <h3 class="project-title">Amazon Clone</h3>
                 <p class="project-description">
-                  A basic frontend clone of the e-commerce site Amazon.
+                  A static clone of the Amazon UI.
                 </p>
                 <a
                   href="#"
                   class="project-link"
-                  onclick="openModal('Amazon Clone', 'Amazon Clone is a basic frontend clone...')"
-                  >View Details</a
+                  onclick="openModal('Amazon Clone', 'Amazon Clone replicates the frontend of Amazon using HTML, CSS, and JS.', 'https://github.com/yourusername/AmazonClone')"
                 >
+                  View Details
+                </a>
               </div>
             </div>
           </div>
-          <!-- Project Card 3 -->
+
           <div class="project-card" data-category="wordpress">
             <div
               class="project-img"
               style="background-image: url('img/Learnkmc1.jpg')"
             >
               <div class="hover-overlay">
-                <h3 class="project-title">Learn Kmc</h3>
+                <h3 class="project-title">Learn KMC</h3>
                 <p class="project-description">
-                  A WordPress site that includes study material for different
-                  courses at Kailali Multiple Campus.
+                  A WordPress site for CSIT study materials.
                 </p>
                 <a
                   href="#"
                   class="project-link"
-                  onclick="openModal('Learn Kmc', 'Learn Kmc is a WordPress site...')"
-                  >View Details</a
+                  onclick="openModal('Learn KMC', 'Learn KMC is a WordPress-based site providing study materials for Kailali Multiple Campus.', 'https://github.com/yourusername/LearnKMC')"
                 >
+                  View Details
+                </a>
               </div>
             </div>
           </div>
@@ -190,12 +246,15 @@
       </div>
     </section>
 
-    <!-- Modal for Project Details -->
+    <!-- Modal -->
     <div id="projectModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h3 id="modalTitle"></h3>
         <p id="modalDescription"></p>
+        <a id="githubButton" href="#" target="_blank" class="github-btn"
+          >View on GitHub</a
+        >
       </div>
     </div>
 
@@ -209,17 +268,41 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
-    <!-- Footer Section -->
+
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <span>© <span id="year"></span> JagatJoshi. All rights reserved.</span>
-        <a href="#top" class="scroll-to-top">
-          <span>&#x2191;</span>
-          <!-- Up arrow character -->
-        </a>
+        <a href="#top" class="scroll-to-top"><span>&#x2191;</span></a>
       </div>
     </footer>
-    <!-- &#x2191; for arrow -->
-    <script src="js/portfolio.js"></script>
+
+    <script>
+      // Modal Logic
+      const modal = document.getElementById("projectModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      const githubButton = document.getElementById("githubButton");
+
+      function openModal(title, description, githubLink) {
+        modal.style.display = "block";
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        githubButton.href = githubLink;
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Year auto-update
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
