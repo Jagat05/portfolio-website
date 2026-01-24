@@ -135,25 +135,29 @@ const navLinks = document.querySelectorAll(".nav-link");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 
 // Navbar scroll effect
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+if (navbar) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
 
-  // Update active nav link based on scroll position
-  updateActiveNavLink();
-});
+    // Update active nav link based on scroll position
+    updateActiveNavLink();
+  });
+}
 
 // Mobile menu toggle
-mobileMenuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-  const menuIcon = mobileMenuToggle.querySelector(".menu-icon");
-  const closeIcon = mobileMenuToggle.querySelector(".close-icon");
-  menuIcon.classList.toggle("hidden");
-  closeIcon.classList.toggle("hidden");
-});
+if (mobileMenuToggle && mobileMenu) {
+  mobileMenuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    const menuIcon = mobileMenuToggle.querySelector(".menu-icon");
+    const closeIcon = mobileMenuToggle.querySelector(".close-icon");
+    if (menuIcon) menuIcon.classList.toggle("hidden");
+    if (closeIcon) closeIcon.classList.toggle("hidden");
+  });
+}
 
 // Close mobile menu when clicking on a link
 mobileNavLinks.forEach((link) => {
@@ -194,44 +198,50 @@ function updateActiveNavLink() {
 // THEME TOGGLE
 // ===================================
 const themeToggle = document.getElementById("themeToggle");
-const sunIcon = themeToggle.querySelector(".sun-icon");
-const moonIcon = themeToggle.querySelector(".moon-icon");
 
-// Check for saved theme preference or default to 'dark'
-const currentTheme = localStorage.getItem("theme") || "dark";
-if (currentTheme === "light") {
-  document.body.classList.add("light");
-  sunIcon.classList.add("hidden");
-  moonIcon.classList.remove("hidden");
+if (themeToggle) {
+  const sunIcon = themeToggle.querySelector(".sun-icon");
+  const moonIcon = themeToggle.querySelector(".moon-icon");
+
+  // Check for saved theme preference or default to 'dark'
+  const currentTheme = localStorage.getItem("theme") || "dark";
+  if (currentTheme === "light") {
+    document.body.classList.add("light");
+    if (sunIcon) sunIcon.classList.add("hidden");
+    if (moonIcon) moonIcon.classList.remove("hidden");
+  }
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+    if (sunIcon) sunIcon.classList.toggle("hidden");
+    if (moonIcon) moonIcon.classList.toggle("hidden");
+
+    // Save theme preference
+    const theme = document.body.classList.contains("light") ? "light" : "dark";
+    localStorage.setItem("theme", theme);
+  });
 }
-
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  sunIcon.classList.toggle("hidden");
-  moonIcon.classList.toggle("hidden");
-
-  // Save theme preference
-  const theme = document.body.classList.contains("light") ? "light" : "dark";
-  localStorage.setItem("theme", theme);
-});
 
 // ===================================
 // TYPING ANIMATION
 // ===================================
 const typedText = document.getElementById("typedText");
-const fullText =
-  "A Developer in Progress, Evolving with Every Line of Code. From Frontend Fine to Backend Power.";
-let currentIndex = 0;
 
-function typeText() {
-  if (currentIndex <= fullText.length) {
-    typedText.textContent = fullText.slice(0, currentIndex);
-    currentIndex++;
-    setTimeout(typeText, 50);
+if (typedText) {
+  const fullText =
+    "A Developer in Progress, Evolving with Every Line of Code. From Frontend Fine to Backend Power.";
+  let currentIndex = 0;
+
+  function typeText() {
+    if (currentIndex <= fullText.length) {
+      typedText.textContent = fullText.slice(0, currentIndex);
+      currentIndex++;
+      setTimeout(typeText, 50);
+    }
   }
-}
 
-typeText();
+  typeText();
+}
 
 // ===================================
 // SMOOTH SCROLLING
@@ -266,6 +276,7 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 
 // Initialize projects
 function renderProjects(filter = "all") {
+  if (!projectsGrid) return;
   projectsGrid.innerHTML = "";
 
   let filteredProjects = projects;
@@ -366,7 +377,9 @@ filterButtons.forEach((button) => {
 });
 
 // Initialize projects on page load
-renderProjects();
+if (projectsGrid) {
+  renderProjects();
+}
 
 // ===================================
 // PROJECT MODAL
@@ -494,7 +507,8 @@ document.addEventListener("keydown", (e) => {
 const contactForm = document.getElementById("contactForm");
 const toast = document.getElementById("toast");
 
-contactForm.addEventListener("submit", async (e) => {
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   // Disable submit button
@@ -555,9 +569,11 @@ contactForm.addEventListener("submit", async (e) => {
     submitButton.disabled = false;
     submitButton.innerHTML = originalButtonHTML;
   }
-});
+  });
+}
 
 function showToast() {
+  if (!toast) return;
   toast.classList.remove("hidden");
 
   setTimeout(() => {
@@ -568,7 +584,10 @@ function showToast() {
 // ===================================
 // FOOTER YEAR
 // ===================================
-document.getElementById("currentYear").textContent = new Date().getFullYear();
+const currentYearElement = document.getElementById("currentYear");
+if (currentYearElement) {
+  currentYearElement.textContent = new Date().getFullYear();
+}
 
 // ===================================
 // PAGE LOAD ANIMATIONS
