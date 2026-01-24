@@ -1,0 +1,35 @@
+{
+  "name": "Jagat Joshi - Full Stack Developer Portfolio",
+  "short_name": "Jagat Joshi",
+  "description": "Portfolio website of Jagat Joshi - Full Stack Developer specializing in MERN Stack",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/img/jagatjoshi.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/jagatjoshi.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "portfolio", "technology"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/img/portfoliophoto1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ]
+}
