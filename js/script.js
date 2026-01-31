@@ -4,107 +4,163 @@
 const projects = [
   {
     id: 1,
-    title: "SikyaNet",
-    description:
-      "Comprehensive Institute Management System for educational institutions",
+    title: "AI Powered ToDo",
+    description: "AI-integrated task manager with smart commands and clean UI.",
     longDescription:
-      "SikyaNet is a complete institute management system designed to streamline educational operations. It includes student management, course tracking, attendance systems, grade management, and administrative tools. Built with modern web technologies to ensure scalability and user-friendly experience.",
-    category: "management",
-    status: "ongoing",
-    technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
-    features: [
-      "Student Management",
-      "Course Tracking",
-      "Attendance System",
-      "Grade Management",
-      "Admin Dashboard",
-    ],
-    progress: 75,
-    github: "#",
-    live: "#",
+      "A clean, functional, and AI-integrated Todo application built with React, Tailwind CSS, and CopilotKit. This app allows users to manage tasks efficiently with local storage persistence and AI-assisted commands.",
+    category: "Frontend",
+    status: "Completed",
+    technologies: ["React", "Tailwind CSS", "CopilotKit"],
+    features: ["Read Tasks", "Add Todo", "Delete Todos", "Updates Todo"],
+    progress: 100,
+    github: "https://github.com/Jagat05/todo_aipowered-simple",
+    live: "https://todo-aipowered-simple-jj.vercel.app/",
   },
   {
     id: 2,
+    title: "AfnoDokan",
+    description: "Afno Dokan is a modern e-commerce frontend application.",
+    longDescription:
+      "Your Shop, Your Way! Afno Dokan is a modern e-commerce frontend application built with the latest web technologies using Next.js App Router. This project demonstrates frontend architecture, reusable components, form handling, admin workflows, and production-ready deployment on Vercel.",
+    category: "Frontend",
+    status: "completed",
+    technologies: [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Lucide React ",
+      "Framer Motion",
+      "Formik &Yup",
+      "Axios",
+    ],
+    features: [
+      "Login page",
+      "Register page",
+      "Home page",
+      "Admin Panel",
+      "Product and User CRUD operations (frontend)",
+    ],
+    progress: 70,
+    github: "https://github.com/Jagat05/AfnoDokan",
+    live: "https://afno-dokan.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Sambad",
     description:
       "Modern organization chat application for seamless team communication",
     longDescription:
       "Sambad is a real-time chat application designed for organizations to enhance team communication. Features include group chats, file sharing, video calls, message encryption, and administrative controls. Built with modern web technologies for optimal performance.",
-    category: "communication",
-    status: "ongoing",
+    category: "FullStack",
+    status: "Completed",
     technologies: ["React", "Socket.io", "Node.js", "MongoDB", "JWT"],
     features: [
       "Real-time Messaging",
       "Group Chats",
-      "File Sharing",
-      "Video Calls",
+      "Organization Creation",
+      "Member Management",
       "Message Encryption",
     ],
     progress: 60,
-    github: "#",
-    live: "#",
-  },
-  {
-    id: 3,
-    title: "SafaiiSathi",
-    description: "Smart waste management system for Dhangadhi city",
-    longDescription:
-      "SafaiiSathi is an innovative waste management system specifically designed for Dhangadhi city. It includes waste collection scheduling, route optimization, citizen reporting, and analytics dashboard for efficient waste management operations.",
-    category: "civic",
-    status: "ongoing",
-    technologies: ["React", "Node.js", "PostgreSQL", "Maps API", "PWA"],
-    features: [
-      "Collection Scheduling",
-      "Route Optimization",
-      "Citizen Portal",
-      "Analytics Dashboard",
-      "Mobile App",
-    ],
-    progress: 45,
-    github: "#",
+    github: "https://github.com/Jagat05/Sambad",
     live: "#",
   },
   {
     id: 4,
+    title: "SikyaNet",
+    description:
+      "Comprehensive Institute Management System for educational institutions",
+    longDescription:
+      "SikyaNet is a complete institute management system designed to streamline educational operations. It includes student management, course tracking, attendance systems, grade management, and administrative tools. Built with modern web technologies to ensure scalability and user-friendly experience.",
+    category: "FullStack",
+    status: "ongoing",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Tailwind CSS",
+      "Cloudinary",
+    ],
+    features: [
+      "Student Management",
+      "Course Tracking",
+      "Attendance System",
+      "Admin Dashboard",
+    ],
+    progress: 50,
+    github: "https://github.com/Jagat05/ShikshyaNet",
+    live: "#",
+  },
+  {
+    id: 5,
     title: "Hamro Dokan",
     description:
       "Nepali E-Commerce platform for traditional tools and handicrafts",
     longDescription:
       "Hamro Dokan is a comprehensive e-commerce platform showcasing traditional Nepali tools, handicrafts, and market-demand products. Features include product catalog, shopping cart, payment integration, and order management.",
-    category: "ecommerce",
+    category: "FullStack",
     status: "completed",
-    technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "PayPal API"],
-    features: [
-      "Product Catalog",
-      "Shopping Cart",
-      "Payment Gateway",
-      "Order Management",
-      "Admin Panel",
-    ],
-    github: "#",
-    live: "#",
-  },
-  {
-    id: 5,
-    title: "Amazon Clone",
-    description: "Frontend clone of the popular e-commerce platform",
-    longDescription:
-      "A pixel-perfect frontend clone of Amazon's e-commerce platform, showcasing modern web development skills with responsive design, interactive components, and smooth user experience.",
-    category: "frontend",
-    status: "completed",
-    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    features: [
-      "Responsive Design",
-      "Product Listings",
-      "Search Functionality",
-      "Cart Interface",
-      "User Authentication UI",
-    ],
-    github: "#",
+    technologies: ["PHP", "MySQL", "JavaScript", "React"],
+    features: ["Product Catalog", "Shopping Cart", "Order Management"],
+    github: "https://github.com/Jagat05/HamroDokan",
     live: "#",
   },
   {
     id: 6,
+    title: "CafePilot",
+    description:
+      "A MERN-stack cafe management system for handling tables, orders, bills, and payments efficiently.",
+    longDescription:
+      "A MERN-stack café management system designed to handle tables, orders, bills, and payments efficiently. It streamlines daily operations, making café management faster and more organized..",
+    category: "FullStack",
+    status: "ongoing",
+    technologies: [
+      "React.js",
+      "Nextjs(App Router)",
+      "Express.js",
+      "Tailwind CSS",
+      "JWT",
+    ],
+    features: [
+      "Table Management",
+      "Order Management",
+      "Billing & Invoicing",
+      "Menu Management",
+      "Cafe Authentication ",
+    ],
+    github: "https://github.com/Jagat05/CafePilot",
+    live: "#",
+  },
+  {
+    id: 7,
+    title: "Sachet Palika",
+    description:
+      "A full-stack MERN platform connecting citizens and municipal authorities to streamline public requests/Reports, issue tracking, and communication.",
+    longDescription:
+      "A full-stack MERN platform enabling citizens to report public issues—such as unmanaged dustbins, broken public property, unusual or destructive activities, and dead animals—directly to municipal authorities. Authorities can track, manage, and resolve these reports efficiently.",
+    category: "FullStack",
+    status: "ongoing",
+    technologies: [
+      "React.js",
+      "Nextjs(App Router)",
+      "Tailwind CSS",
+      "Express.js",
+      "JWT",
+      "REST APIs",
+    ],
+    features: [
+      "Citizens can report public issues",
+      "Role-Based Dashboards",
+      "Real-Time Issue Tracking",
+      "Enhanced Communication",
+    ],
+    github: "https://github.com/Jagat05/Sachet-Palika",
+    live: "#",
+  },
+  {
+    id: 8,
     title: "Learn KMC",
     description:
       "Educational WordPress site for Kailali Multiple Campus students",
@@ -509,66 +565,67 @@ const toast = document.getElementById("toast");
 
 if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  // Disable submit button
-  const submitButton = contactForm.querySelector('button[type="submit"]');
-  const originalButtonHTML = submitButton.innerHTML;
-  submitButton.disabled = true;
-  submitButton.innerHTML = `
+    // Disable submit button
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const originalButtonHTML = submitButton.innerHTML;
+    submitButton.disabled = true;
+    submitButton.innerHTML = `
         <div style="width: 20px; height: 20px; border: 2px solid currentColor; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
         Sending Message...
     `;
 
-  // Add spin animation if not already added
-  if (!document.getElementById("spin-animation")) {
-    const style = document.createElement("style");
-    style.id = "spin-animation";
-    style.textContent = "@keyframes spin { to { transform: rotate(360deg); } }";
-    document.head.appendChild(style);
-  }
-
-  try {
-    // Submit form to Formspree
-    const formData = new FormData(contactForm);
-    const response = await fetch(contactForm.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    if (response.ok) {
-      // Show success toast
-      showToast();
-
-      // Reset form
-      contactForm.reset();
-    } else {
-      // Handle error
-      const data = await response.json();
-      if (data.errors) {
-        alert(
-          "Oops! There was a problem submitting your form: " +
-            data.errors.map((error) => error.message).join(", ")
-        );
-      } else {
-        alert(
-          "Oops! There was a problem submitting your form. Please try again."
-        );
-      }
+    // Add spin animation if not already added
+    if (!document.getElementById("spin-animation")) {
+      const style = document.createElement("style");
+      style.id = "spin-animation";
+      style.textContent =
+        "@keyframes spin { to { transform: rotate(360deg); } }";
+      document.head.appendChild(style);
     }
-  } catch (error) {
-    alert(
-      "Oops! There was a problem submitting your form. Please try again later."
-    );
-    console.error("Form submission error:", error);
-  } finally {
-    // Re-enable submit button
-    submitButton.disabled = false;
-    submitButton.innerHTML = originalButtonHTML;
-  }
+
+    try {
+      // Submit form to Formspree
+      const formData = new FormData(contactForm);
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        // Show success toast
+        showToast();
+
+        // Reset form
+        contactForm.reset();
+      } else {
+        // Handle error
+        const data = await response.json();
+        if (data.errors) {
+          alert(
+            "Oops! There was a problem submitting your form: " +
+              data.errors.map((error) => error.message).join(", "),
+          );
+        } else {
+          alert(
+            "Oops! There was a problem submitting your form. Please try again.",
+          );
+        }
+      }
+    } catch (error) {
+      alert(
+        "Oops! There was a problem submitting your form. Please try again later.",
+      );
+      console.error("Form submission error:", error);
+    } finally {
+      // Re-enable submit button
+      submitButton.disabled = false;
+      submitButton.innerHTML = originalButtonHTML;
+    }
   });
 }
 
