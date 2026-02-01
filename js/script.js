@@ -68,33 +68,6 @@ const projects = [
   },
   {
     id: 4,
-    title: "SikyaNet",
-    description:
-      "Comprehensive Institute Management System for educational institutions",
-    longDescription:
-      "SikyaNet is a complete institute management system designed to streamline educational operations. It includes student management, course tracking, attendance systems, grade management, and administrative tools. Built with modern web technologies to ensure scalability and user-friendly experience.",
-    category: "FullStack",
-    status: "ongoing",
-    technologies: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express.js",
-      "Tailwind CSS",
-      "Cloudinary",
-    ],
-    features: [
-      "Student Management",
-      "Course Tracking",
-      "Attendance System",
-      "Admin Dashboard",
-    ],
-    progress: 50,
-    github: "https://github.com/Jagat05/ShikshyaNet",
-    live: "#",
-  },
-  {
-    id: 5,
     title: "Hamro Dokan",
     description:
       "Nepali E-Commerce platform for traditional tools and handicrafts",
@@ -108,7 +81,7 @@ const projects = [
     live: "#",
   },
   {
-    id: 6,
+    id: 5,
     title: "CafePilot",
     description:
       "A MERN-stack cafe management system for handling tables, orders, bills, and payments efficiently.",
@@ -134,7 +107,7 @@ const projects = [
     live: "#",
   },
   {
-    id: 7,
+    id: 6,
     title: "Sachet Palika",
     description:
       "A full-stack MERN platform connecting citizens and municipal authorities to streamline public requests/Reports, issue tracking, and communication.",
@@ -157,6 +130,33 @@ const projects = [
       "Enhanced Communication",
     ],
     github: "https://github.com/Jagat05/Sachet-Palika",
+    live: "#",
+  },
+  {
+    id: 7,
+    title: "SikyaNet",
+    description:
+      "Comprehensive Institute Management System for educational institutions",
+    longDescription:
+      "SikyaNet is a complete institute management system designed to streamline educational operations. It includes student management, course tracking, attendance systems, grade management, and administrative tools. Built with modern web technologies to ensure scalability and user-friendly experience.",
+    category: "FullStack",
+    status: "ongoing",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "Tailwind CSS",
+      "Cloudinary",
+    ],
+    features: [
+      "Student Management",
+      "Course Tracking",
+      "Attendance System",
+      "Admin Dashboard",
+    ],
+    progress: 50,
+    github: "https://github.com/Jagat05/ShikshyaNet",
     live: "#",
   },
   {
