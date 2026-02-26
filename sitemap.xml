@@ -5,13 +5,13 @@
   <!-- Homepage -->
   <url>
     <loc>https://jagatjoshi.com.np/</loc>
-    <lastmod>2026-01-24</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://jagatjoshi.com.np/img/jagatjoshi.png</image:loc>
-      <image:title>Jagat Joshi - Full Stack Developer</image:title>
-      <image:caption>Portfolio photo of Jagat Joshi</image:caption>
+      <image:title>Jagat Joshi - Best Web Developer in Nepal</image:title>
+      <image:caption>Jagat Joshi - Professional MERN Stack Developer in Nepal</image:caption>
     </image:image>
   </url>
   

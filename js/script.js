@@ -285,7 +285,7 @@ const typedText = document.getElementById("typedText");
 
 if (typedText) {
   const fullText =
-    "A Developer in Progress, Evolving with Every Line of Code. From Frontend Fine to Backend Power.";
+    "Best Web Developer in Nepal | MERN Stack Developer | Evolving with Every Line of Code.";
   let currentIndex = 0;
 
   function typeText() {
@@ -362,8 +362,8 @@ function createProjectCard(project, index) {
   const statusClass = project.status === "ongoing" ? "ongoing" : "completed";
   const statusIcon =
     project.status === "ongoing"
-      ? '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>'
-      : '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>';
+      ? '<svg width="20" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>'
+      : '<svg width="20" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>';
 
   const progressBar =
     project.status === "ongoing" && project.progress
