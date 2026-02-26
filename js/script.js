@@ -285,7 +285,7 @@ const typedText = document.getElementById("typedText");
 
 if (typedText) {
   const fullText =
-    "Best Web Developer in Nepal | MERN Stack Developer | Evolving with Every Line of Code.";
+    "Web Developer From Nepal | MERN Stack Developer | Evolving with Every Line of Code.";
   let currentIndex = 0;
 
   function typeText() {
